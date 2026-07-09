@@ -1,3 +1,5 @@
+const apiKey = SUA_CHAVE_AQUI";
+
 const corpoTela = document.getElementById("tela-toda");
 const containerResultado = document.getElementById("container-resultado");
 const blocoBusca = document.getElementById("bloco-busca");
