@@ -1,10 +1,10 @@
 # 🌤️ ClimaX
 
-<p align="center">
+<p>
   <strong>Uma aplicação web moderna para consulta de previsões climáticas em tempo real.</strong>
 </p>
 
-<p align="center">
+<p>
   Interface elegante com efeito <strong>Glassmorphism</strong>, temas dinâmicos e dados meteorológicos completos utilizando a API do OpenWeather.
 </p>
 
