@@ -148,6 +148,7 @@ ClimaX/
 ├── config.js        # Não enviado ao GitHub
 ├── index.html
 ├── .gitignore
+├── icon.svg
 └── README.md
 ```
 
