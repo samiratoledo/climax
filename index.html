@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="icon.svg" type="svg">
+    <title>ClimaX</title>
+</head>
+
+<body id="tela-toda" class="fundo-padrao">
+
+    <div class="container px-4" style="max-width: 800px; width: 100%;">
+
+        <div id="bloco-busca" class="has-text-centered">
+            <div class="is-flex is-justify-content-center is-align-items-center mb-4">
+                <img src="icon.svg" alt="Ícone ClimaX" style="width: 40px; height: 40px; margin-right: 12px;">
+                <h1 class="title is-2 has-text-white mb-0">ClimaX</h1>
+            </div>
+
+            <div class="field has-addons has-addons-centered">
+                <div class="control" style="min-width: 250px;">
+                    <input class="input is-medium" type="text" id="campo-cidade" placeholder="Ex: Salvador, BR">
+                </div>
+                <div class="control">
+                    <button class="button is-link is-medium" id="botao-busca">Procurar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-resultado" class="resultado columns is-variable is-5 escondido">
+
+            <div class="column is-half">
+                <div class="box has-text-centered" style="height: 100%;">
+                    <p class="subtitle is-1 has-text-weight-bold mb-1" id="temperatura"></p>
+                    <h2 class="title is-4 mb-4" id="lugar"></h2>
+
+                    <hr style="background-color: rgba(255,255,255,0.1); margin: 15px 0;">
+
+                    <div class="columns is-mobile mb-2">
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Mínima</p>
+                            <p class="is-size-5 has-text-weight-medium" id="temp-min"></p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Máxima</p>
+                            <p class="is-size-5 has-text-weight-medium" id="temp-max"></p>
+                        </div>
+                    </div>
+
+                    <div class="columns is-mobile mb-2">
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Sensação</p>
+                            <p class="is-size-5 has-text-weight-medium" id="sensacao"></p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Umidade</p>
+                            <p class="is-size-5 has-text-weight-medium" id="umidade"></p>
+                        </div>
+                    </div>
+
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Nascer do Sol</p>
+                            <p class="is-size-5 has-text-weight-medium" id="nascer"></p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7 has-text-grey-light">Pôr do Sol</p>
+                            <p class="is-size-5 has-text-weight-medium" id="por-sol"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="box has-text-centered"
+                    style="height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 15px;">
+                    <h3 class="title is-5 mb-1">Conselhos do ClimaX</h3>
+
+                    <div class="notification is-link is-light py-3">
+                        <p id="conselho-casaco" class="has-text-weight-medium is-size-5"></p>
+                    </div>
+
+                    <div class="notification is-info is-light py-3">
+                        <p id="conselho-chuva" class="has-text-weight-medium is-size-5"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

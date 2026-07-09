@@ -1,0 +1,87 @@
+/* Configuração da tela principal - pode manter assim */
+#tela-toda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 40px 20px;
+    transition: background 0.6s ease;
+}
+
+/* O bloco começa ocupando quase a tela toda, forçando o centro */
+#bloco-busca {
+    width: 100%;
+    height: 70vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o input verticalmente */
+    align-items: center;
+    transition: height 0.5s ease; /* Efeito de subida suave */
+}
+
+/* Quando pesquisar, o JS adiciona essa classe que encolhe a altura e joga a busca pro topo */
+#bloco-busca.no-topo {
+    height: auto !important;
+    margin-bottom: 40px !important;
+}
+
+/* Input Glassmorphic */
+.input {
+    background: rgba(26, 31, 38, 0.5) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.input::placeholder {
+    color: #cbd5e1 !important;
+}
+
+.input:focus {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Efeito Glassmorphism nos Boxes */
+.box {
+    background: rgba(26, 31, 38, 0.65) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.box .title {
+    color: white !important;
+}
+.box p {
+    color: #e5e7eb !important;
+}
+
+/* Ajustes finos de texto na div do Clima */
+#temperatura {
+    margin-bottom: 0px !important;
+}
+#lugar {
+    margin-bottom: 10px !important;
+}
+
+/* Força os textos dentro dos blocos de conselhos a continuarem escuros */
+.notification p {
+    color: #1f2937 !important;
+}
+
+/* Classe para ocultar antes da pesquisa */
+.escondido {
+    display: none !important;
+}
+
+/* Gradientes do ClimaX */
+.fundo-padrao { background: linear-gradient(135deg, #2c3e50, #3498db); }
+.fundo-chuva { background: linear-gradient(135deg, #636e72, #2d3436); }
+.fundo-frio { background: linear-gradient(135deg, #dfe6e9, #0984e3); }
+.fundo-calor { background: linear-gradient(135deg, #f1c40f, #e67e22); }
