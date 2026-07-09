@@ -143,12 +143,8 @@ Isso significa que sua chave da API **não será enviada para o GitHub**, manten
 ```text
 ClimaX/
 │
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
+├── style.css
+├── script.js
 ├── config.js        # Não enviado ao GitHub
 ├── index.html
 ├── .gitignore
